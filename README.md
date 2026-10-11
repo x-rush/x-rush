@@ -82,7 +82,7 @@ rush@github:~ $ uptime
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
 </p>
 <p align="left">
-  <img src="https://img.shields.io/badge/TanStack-0D9488?style=for-the-badge&logo=tanstack&logoColor=fff&cacheSeconds=86400" alt="TanStack" />
+  <img src="https://img.shields.io/badge/TanStack-0D9488?style=for-the-badge" alt="TanStack" />
   <img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Native" />
   <img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA" />
 </p>
