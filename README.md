@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://readme-typing-svg.demolab.com">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=FF6B35&center=true&vCenter=true&width=680&height=50&lines=spinning+up+agent+session...%3Bforges+online%3A+image+%C2%B7+music+%C2%B7+video%3B%E4%B8%BA+AI+%E6%99%BA%E8%83%BD%E4%BD%93%E9%94%BB%E9%80%A0%E5%B7%A5%E5%85%B7%E9%93%BE" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=FF6B35&center=true&vCenter=true&width=680&height=50&lines=one+developer%2C+shipping+like+a+team%3B%E4%B8%80%E4%B8%AA%E4%BA%BA%EF%BC%8C%E4%B8%80%E6%94%AF%E6%88%98%E9%98%9F%3Bengines+%C2%B7+workflows+%C2%B7+apps+%C2%B7+content" alt="Typing SVG" />
   </a>
 </p>
 
@@ -14,13 +14,15 @@
 
 ```bash
 rush@github:~ $ whoami
-Rushing Lee · making AI agents see, hear & create
-#     AI 生成工具链开发者 —— 让 AI 智能体看见、听见、创造
+Rushing Lee · one developer, shipping like a team
+#     一个人，一支战队的产出：引擎 · 工作流 · 应用 · 内容
 
-rush@github:~ $ cat mission.map
-image-forge  ->  eyes     # sight  · 让 AI 看见
-music-forge  ->  ears     # sound  · 让 AI 听见
-video-forge  ->  hands    # motion · 让 AI 创造
+rush@github:~ $ cat team.manifest
+engines     ->  image-forge · music-forge · video-forge
+workflows   ->  app-dev-workflow · claude-code-autopilot
+apps        ->  draftdesk · rednote-vibe-tools · dishes-menu
+content     ->  skills & tutorials, shipped in public
+#     引擎 · 工作流 · 应用 · 内容 —— 四条产品线，一人全栈
 
 rush@github:~ $ echo "$MOTTO"
 吾辈为学，当从心髓入微处用力，自然笃实光辉。
@@ -46,7 +48,7 @@ rush@github:~ $ uptime
 
 ---
 
-## 🛠️ `ls ~/workflow/` — Methodology · 方法论
+## 🛠️ `ls ~/builds/` — Workflows & Apps · 工作流与应用
 
 > Not just tools — the workflows that make agents actually ship.
 > 不止造工具，还造让智能体真正「交付」的工作流。
@@ -66,20 +68,21 @@ rush@github:~ $ uptime
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue" />
 </p>
 <p align="left">
   <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA" />
 </p>
 <p align="left">
+  <img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA" />
+  <img src="https://img.shields.io/badge/ffmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white" alt="ffmpeg" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/ffmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white" alt="ffmpeg" />
   <img src="https://img.shields.io/badge/fal.ai-FF6B35?style=for-the-badge" alt="fal.ai" />
 </p>
 <p align="left">
