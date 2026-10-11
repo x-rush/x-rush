@@ -92,8 +92,8 @@ rush@github:~ $ uptime
   <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" />
-  <img src="https://img.shields.io/badge/ThinkPHP-68A8E6?style=for-the-badge" alt="ThinkPHP" />
-  <img src="https://img.shields.io/badge/go_zero-00ADD8?style=for-the-badge" alt="go-zero" />
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+  <img src="https://img.shields.io/badge/Gin-008ECF?style=for-the-badge&logo=gin&logoColor=white" alt="Gin" />
 </p>
 
 <p align="left"><b>🗄️ Databases · 数据库</b></p>
