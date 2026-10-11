@@ -25,7 +25,7 @@ rush@github:~ $ echo "$MOTTO"
 #     —— 曾国藩 Zeng Guofan
 
 rush@github:~ $ uptime
-▓▓▓▓▓▓▓▓▓▓ building in public since 2021 · █
+[##########] building in public since 2021 ...
 ```
 
 ---
