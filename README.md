@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner-team.svg" alt="x-rush — one developer, shipping like a team" width="100%" />
+  <img src="assets/banner.svg" alt="x-rush — one developer, shipping like a team" width="100%" />
 </p>
 
 <p align="center">

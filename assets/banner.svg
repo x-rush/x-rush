@@ -45,7 +45,7 @@
   <text x="72" y="270" font-family="ui-monospace, 'Cascadia Code', Menlo, Consolas, monospace" font-size="26" fill="#c9d1d9">one developer, shipping like a team</text>
   <text x="72" y="308" font-family="ui-monospace, 'Cascadia Code', Menlo, Consolas, 'PingFang SC', 'Microsoft YaHei', monospace" font-size="21" fill="#FFD23F" opacity="0.85">一个人，一支战队的产出：引擎 · 工作流 · 应用 · 内容</text>
 
-  <text x="72" y="372" font-family="ui-monospace, 'Cascadia Code', Menlo, Consolas, monospace" font-size="18" fill="#6e7681">&gt; forges: image-forge · music-forge · video-forge</text>
+  <text x="72" y="372" font-family="ui-monospace, 'Cascadia Code', Menlo, Consolas, monospace" font-size="18" fill="#6e7681">&gt; shipping: engines · workflows · apps · content</text>
 
   <g>
     <circle cx="920" cy="392" r="2.6" fill="#FF6B35" opacity="0">
