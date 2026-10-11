@@ -84,7 +84,7 @@ rush@github:~ $ uptime
 <p align="left">
   <img src="https://img.shields.io/badge/TanStack-0D9488?style=for-the-badge" alt="TanStack" />
   <img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Native" />
-  <img src="https://img.shields.io/badge/Tauri-24C8DB?style=for-the-badge&logo=tauri&logoColor=black" alt="Tauri" />
+  <img src="assets/tauri-badge.svg" alt="Tauri" />
   <img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA" />
 </p>
 
