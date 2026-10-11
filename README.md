@@ -25,9 +25,9 @@ content     ->  skills & tutorials, shipped in public
 #     引擎 · 工作流 · 应用 · 内容 —— 四条产品线，一人全栈
 
 rush@github:~ $ echo "$MOTTO"
-吾辈为学，当从心髓入微处用力，自然笃实光辉。
-#     "Apply effort at the subtlest depths of the mind, and solidity & brilliance follow."
-#     —— 曾国藩 Zeng Guofan
+我是 x-rush，一个总想突破界限、跳出常规的人——去做那个「下标越界」的异常。
+#     "Always pushing past boundaries, breaking out of convention —
+#      be the out-of-bounds exception."  — x-rush
 
 rush@github:~ $ uptime
 [##########] building in public since 2021 ...
