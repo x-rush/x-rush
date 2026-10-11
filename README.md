@@ -117,7 +117,7 @@ rush@github:~ $ uptime
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
   <img src="https://img.shields.io/badge/CloudBase-0052D9?style=for-the-badge" alt="CloudBase" />
-  <img src="https://img.shields.io/badge/Aliyun-FF6A00?style=for-the-badge&logo=alibabacloud&logoColor=white" alt="Aliyun" />
+  <img src="assets/aliyun-badge.svg" alt="Aliyun" />
 </p>
 
 <p align="left"><b>🧠 AI &amp; Media Engineering · AI 与多媒体工程</b></p>
