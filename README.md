@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="x-rush — giving AI agents eyes, ears &amp; hands" width="100%" />
+  <img src="assets/banner.svg?v=20261012" alt="x-rush — one developer, shipping like a team" width="100%" />
 </p>
 
 <p align="center">
