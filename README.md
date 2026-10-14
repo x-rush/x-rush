@@ -19,7 +19,7 @@ Rushing Lee · one developer, shipping like a team
 
 rush@github:~ $ cat team.manifest
 engines     ->  image-forge · music-forge · video-forge
-workflows   ->  app-dev-workflow · claude-code-autopilot
+workflows   ->  app-dev-workflow
 apps        ->  draftdesk · rednote-vibe-tools · dishes-menu
 content     ->  skills & tutorials, shipped in public
 #     引擎 · 工作流 · 应用 · 内容 —— 四条产品线，一人全栈
@@ -57,7 +57,6 @@ rush@github:~ $ uptime
 | --- | --- |
 | 🧭 [**app-dev-workflow**](https://github.com/x-rush/app-dev-workflow) | Six-stage app development workflow for AI coding agents (requirement → prototype → build → test → architect)<br>面向 AI 编程智能体的六阶段应用开发工作流技能 |
 | 📝 [**draftdesk**](https://github.com/x-rush/draftdesk) | Self-hosted AI research & editorial workbench with evidence-backed topics, trends and ideas<br>自托管 AI 研究与编辑工作台：有据可查的选题、趋势与灵感 |
-| 🤖 [**claude-code-autopilot**](https://github.com/x-rush/claude-code-autopilot) | Fully unattended project execution — deep requirement discussion, smart planning, continuous autonomous delivery<br>完全无人值守的项目执行系统：深度需求讨论 + 智能计划 + 连续自主交付 |
 | 📸 [**photo-retouch**](https://github.com/x-rush/photo-retouch) | Professional portrait retouching methodology — exhaustive analysis, single-shot generation, identity-anchor verification<br>专业人像修图方法论：穷尽分析、一次成图、身份锚点校验 |
 
 ---
