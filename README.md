@@ -137,8 +137,8 @@ rush@github:~ $ uptime
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=x-rush&show_icons=true&hide_border=true&bg_color=0d1117&title_color=FF6B35&icon_color=FFD23F&text_color=c9d1d9&include_all_commits=true&count_private=true" />
-    <img src="https://github-readme-stats.vercel.app/api?username=x-rush&show_icons=true&hide_border=true&bg_color=f6f8fa&title_color=E8590C&icon_color=E8590C&text_color=24292f&include_all_commits=true&count_private=true" alt="GitHub Stats" height="165" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=x-rush&show_icons=true&hide_border=true&bg_color=0d1117&title_color=FF6B35&icon_color=FFD23F&text_color=c9d1d9&count_private=true" />
+    <img src="https://github-readme-stats.vercel.app/api?username=x-rush&show_icons=true&hide_border=true&bg_color=f6f8fa&title_color=E8590C&icon_color=E8590C&text_color=24292f&count_private=true" alt="GitHub Stats" height="165" />
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=x-rush&layout=compact&hide_border=true&bg_color=0d1117&title_color=FF6B35&text_color=c9d1d9&langs_count=8" />
