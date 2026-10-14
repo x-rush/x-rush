@@ -55,8 +55,8 @@ rush@github:~ $ uptime
 
 | Project 项目 | What it is 说明 |
 | --- | --- |
-| 🧭 [**app-dev-workflow**](https://github.com/x-rush/app-dev-workflow) | Six-stage app development workflow for AI coding agents (requirement → prototype → build → test → architect)<br>面向 AI 编程智能体的六阶段应用开发工作流技能 |
 | 📝 [**draftdesk**](https://github.com/x-rush/draftdesk) | Self-hosted AI research & editorial workbench with evidence-backed topics, trends and ideas<br>自托管 AI 研究与编辑工作台：有据可查的选题、趋势与灵感 |
+| 🧭 [**app-dev-workflow**](https://github.com/x-rush/app-dev-workflow) | Six-stage app development workflow for AI coding agents (requirement → prototype → build → test → architect)<br>面向 AI 编程智能体的六阶段应用开发工作流技能 |
 | 📸 [**photo-retouch**](https://github.com/x-rush/photo-retouch) | Professional portrait retouching methodology — exhaustive analysis, single-shot generation, identity-anchor verification<br>专业人像修图方法论：穷尽分析、一次成图、身份锚点校验 |
 
 ---
