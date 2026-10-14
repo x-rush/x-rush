@@ -152,12 +152,10 @@ rush@github:~ $ uptime
 
 ```bash
 rush@github:~ $ ps aux | grep now
-forge   01  teaching video-forge to transcribe — ASR → SRT subtitle pipeline
-#         正在教 video-forge 听懂视频：语音识别 → 字幕管线
-forge   02  iterating app-dev-workflow, shipping v0.2.x
-#         迭代 app-dev-workflow 工作流技能
-forge   03  building in public, one commit at a time
-#         持续公开构建，一次一个 commit
+venture  01  multi-platform content matrix       # 多内容自媒体矩阵
+venture  02  AI SaaS sites --going-global        # AI SaaS 独立站出海
+venture  03  creative apps portfolio             # 创意应用矩阵
+venture  04  cross-border e-commerce             # 跨境电商
 ```
 
 ---
