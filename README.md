@@ -35,19 +35,6 @@ rush@github:~ $ uptime
 
 ---
 
-## 🔥 `ls ~/forges/` — The Forge Series · 锻造系列
-
-> Multi-channel generation engines that plug straight into coding agents — one JSON registry, zero drama.
-> 可直接接入编程智能体的多通道生成引擎 —— 一个 JSON 注册表，零依赖、零折腾。
-
-| Engine 引擎 | What it does 功能 | Powered by 通道 |
-| --- | --- | --- |
-| ⚒️ [**image-forge**](https://github.com/x-rush/image-forge) | Multi-channel AI image generation engine — model registry, edit-endpoint routing & spend budgeting<br>多通道 AI 生图引擎：模型注册表、编辑路由、预算管控 | fal.ai · Replicate |
-| 🎵 [**music-forge**](https://github.com/x-rush/music-forge) | Multi-channel AI music engine, model routing via one JSON registry, zero dependencies<br>多通道 AI 音乐引擎：单一注册表路由模型，零依赖 | Suno · Mureka |
-| 🎬 [**video-forge**](https://github.com/x-rush/video-forge) | Multi-channel AI video engine — generation, voiceover & ffmpeg assembly<br>多通道 AI 视频引擎：生成、配音与成片组装 | Wan3.0 · Seedance · ffmpeg |
-
----
-
 ## 🛠️ `ls ~/builds/` — Workflows & Apps · 工作流与应用
 
 > Not just tools — the workflows that make agents actually ship.
@@ -58,6 +45,19 @@ rush@github:~ $ uptime
 | 📝 [**draftdesk**](https://github.com/x-rush/draftdesk) | Self-hosted AI research & editorial workbench with evidence-backed topics, trends and ideas<br>自托管 AI 研究与编辑工作台：有据可查的选题、趋势与灵感 |
 | 🧭 [**app-dev-workflow**](https://github.com/x-rush/app-dev-workflow) | Six-stage app development workflow for AI coding agents (requirement → prototype → build → test → architect)<br>面向 AI 编程智能体的六阶段应用开发工作流技能 |
 | 📸 [**photo-retouch**](https://github.com/x-rush/photo-retouch) | Professional portrait retouching methodology — exhaustive analysis, single-shot generation, identity-anchor verification<br>专业人像修图方法论：穷尽分析、一次成图、身份锚点校验 |
+
+---
+
+## 🔥 `ls ~/forges/` — The Forge Series · 锻造系列
+
+> Multi-channel generation engines that plug straight into coding agents — one JSON registry, zero drama.
+> 可直接接入编程智能体的多通道生成引擎 —— 一个 JSON 注册表，零依赖、零折腾。
+
+| Engine 引擎 | What it does 功能 | Powered by 通道 |
+| --- | --- | --- |
+| ⚒️ [**image-forge**](https://github.com/x-rush/image-forge) | Multi-channel AI image generation engine — model registry, edit-endpoint routing & spend budgeting<br>多通道 AI 生图引擎：模型注册表、编辑路由、预算管控 | fal.ai · Replicate |
+| 🎵 [**music-forge**](https://github.com/x-rush/music-forge) | Multi-channel AI music engine, model routing via one JSON registry, zero dependencies<br>多通道 AI 音乐引擎：单一注册表路由模型，零依赖 | Suno · Mureka |
+| 🎬 [**video-forge**](https://github.com/x-rush/video-forge) | Multi-channel AI video engine — generation, voiceover & ffmpeg assembly<br>多通道 AI 视频引擎：生成、配音与成片组装 | Wan3.0 · Seedance · ffmpeg |
 
 ---
 
