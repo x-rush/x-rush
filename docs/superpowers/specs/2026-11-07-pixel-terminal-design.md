@@ -43,7 +43,7 @@ This fails if it looks like a generic neon cyberpunk template, sacrifices readab
 4. **03 / ACTIVE QUESTS** — existing draftdesk, app-dev-workflow and photo-retouch links and bilingual descriptions, with custom pixel icons.
 5. **04 / FORGE SYSTEM** — existing image-forge, music-forge and video-forge links and bilingual descriptions, presented as one connected engine family.
 6. **05 / INVENTORY** — all 39 existing badges in the existing six categories, fully visible. Category labels use slot numbers and counts. Badge sources retain `for-the-badge` height; local badge SVGs remain 28px high.
-7. **06 / SYSTEM METRICS** — existing GitHub stats and top languages, recolored to the cyan/violet system with light/dark variants.
+7. **06 / SYSTEM METRICS** — GitHub stats and top languages with light/dark variants. The original stats provider returned HTTP 503 during implementation, so use the verified summary-card provider and its native dark/light palettes.
 8. **07 / CURRENTLY** — preserve all four current venture lines.
 9. **Footer** — local pixel footer, build status and follow link.
 

@@ -184,12 +184,12 @@ VIDEO FORGE ─┘
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=x-rush&amp;show_icons=true&amp;hide_border=true&amp;bg_color=070A12&amp;title_color=5DEFFF&amp;icon_color=9D7CFF&amp;text_color=D7E1EA&amp;count_private=true" />
-    <img src="https://github-readme-stats.vercel.app/api?username=x-rush&amp;show_icons=true&amp;hide_border=true&amp;bg_color=F6F8FA&amp;title_color=087F8C&amp;icon_color=6D4CC4&amp;text_color=24292F&amp;count_private=true" alt="GitHub Stats" height="165" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=x-rush&amp;theme=github_dark" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=x-rush&amp;theme=default" alt="GitHub Stats" height="200" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=x-rush&amp;layout=compact&amp;hide_border=true&amp;bg_color=070A12&amp;title_color=5DEFFF&amp;icon_color=9D7CFF&amp;text_color=D7E1EA&amp;langs_count=8" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=x-rush&amp;layout=compact&amp;hide_border=true&amp;bg_color=F6F8FA&amp;title_color=087F8C&amp;icon_color=6D4CC4&amp;text_color=24292F&amp;langs_count=8" alt="Top Languages" height="165" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=x-rush&amp;theme=github_dark" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=x-rush&amp;theme=default" alt="Top Languages by Commit" height="200" />
   </picture>
 </p>
 

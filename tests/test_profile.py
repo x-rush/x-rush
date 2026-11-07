@@ -184,9 +184,11 @@ class ProfileReadmeTests(unittest.TestCase):
     def test_stats_keep_light_and_dark_picture_variants(self):
         self.assertGreaterEqual(self.source.count("<picture>"), 2)
         self.assertGreaterEqual(self.source.count('media="(prefers-color-scheme: dark)"'), 2)
-        self.assertTrue("title_color=5DEFFF" in self.source, "Missing cyan stat titles")
-        self.assertTrue("icon_color=9D7CFF" in self.source, "Missing violet stat icons")
-        self.assertTrue("bg_color=F6F8FA" in self.source, "Missing light stat background")
+        self.assertTrue("github-profile-summary-cards.vercel.app/api/cards/stats" in self.source, "Missing stats card")
+        self.assertTrue("github-profile-summary-cards.vercel.app/api/cards/most-commit-language" in self.source, "Missing language card")
+        self.assertTrue("theme=github_dark" in self.source, "Missing dark stats theme")
+        self.assertTrue("theme=default" in self.source, "Missing light stats theme")
+        self.assertNotIn("github-readme-stats.vercel.app", self.source)
 
 
 if __name__ == "__main__":
