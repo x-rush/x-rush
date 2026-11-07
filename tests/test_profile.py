@@ -26,6 +26,15 @@ def local_name(tag):
     return tag.rsplit("}", 1)[-1]
 
 
+def contrast_ratio(foreground, background):
+    def luminance(value):
+        channels = [int(value[index:index + 2], 16) / 255 for index in (1, 3, 5)]
+        linear = [channel / 12.92 if channel <= 0.04045 else ((channel + 0.055) / 1.055) ** 2.4 for channel in channels]
+        return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2]
+    lighter, darker = sorted((luminance(foreground), luminance(background)), reverse=True)
+    return (lighter + 0.05) / (darker + 0.05)
+
+
 class ProfileAssetTests(unittest.TestCase):
     def test_expected_pixel_assets_exist(self):
         missing = [str(path.relative_to(ROOT)) for path in NEW_ASSETS if not path.is_file()]
@@ -41,9 +50,25 @@ class ProfileAssetTests(unittest.TestCase):
         self.assertIn("crispEdges", source)
 
     def test_banner_motion_has_a_static_reduced_motion_fallback(self):
+        for path in ASSETS.rglob("*.svg"):
+            source = path.read_text(encoding="utf-8")
+            styles = re.findall(r"<style[^>]*>(.*?)</style>", source, re.S)
+            animated = set()
+            for style in styles:
+                animated.update(re.findall(r"\.([A-Za-z][A-Za-z0-9-]*)\s*\{[^{}]*animation\s*:\s*(?!none)", style))
+            if not animated:
+                continue
+            with self.subTest(asset=str(path.relative_to(ROOT))):
+                self.assertIn("@media (prefers-reduced-motion: reduce)", source)
+                reduce_section = source[source.index("@media (prefers-reduced-motion: reduce)"):]
+                self.assertRegex(reduce_section, r"animation:\s*none")
+                for selector in animated:
+                    self.assertIn(f".{selector}", reduce_section, f"Animated selector lacks reduced-motion fallback: {selector}")
+
+    def test_small_hero_labels_meet_contrast_floor(self):
         source = (ASSETS / "banner.svg").read_text(encoding="utf-8")
-        self.assertIn("@media (prefers-reduced-motion: reduce)", source)
-        self.assertRegex(source, r"animation:\s*none")
+        self.assertNotIn("#63758C", source)
+        self.assertGreaterEqual(contrast_ratio("#71869E", "#070A12"), 4.5)
 
     def test_mobile_artwork_has_readable_canvas_and_type(self):
         cases = (("banner-mobile.svg", "0 0 640 640", 18), ("footer-mobile.svg", "0 0 640 240", 20))
@@ -132,6 +157,10 @@ class ProfileReadmeTests(unittest.TestCase):
         ):
             self.assertTrue(heading in self.source, f"Missing section: {heading}")
 
+    def test_quest_table_uses_id_not_a_misnamed_status_column(self):
+        self.assertIn("<th>ID</th>", self.source)
+        self.assertNotIn("<th>Status</th>", self.source)
+
     def test_original_projects_and_current_ventures_survive(self):
         for project in (
             "draftdesk",
@@ -168,8 +197,12 @@ class ProfileReadmeTests(unittest.TestCase):
     def test_images_have_alt_text_and_local_files_exist(self):
         for image in self.parser.images:
             with self.subTest(image=image.get("src")):
-                self.assertTrue(image.get("alt", "").strip())
                 src = image.get("src", "")
+                if src.startswith("assets/icons/"):
+                    self.assertEqual("", image.get("alt"))
+                    self.assertEqual("true", image.get("aria-hidden"))
+                else:
+                    self.assertTrue(image.get("alt", "").strip(), f"Missing alt text: {src}")
                 if src and not src.startswith(("https://", "http://", "data:")):
                     self.assertTrue((ROOT / src.split("?", 1)[0]).is_file(), src)
         for srcset in self.parser.source_sets:

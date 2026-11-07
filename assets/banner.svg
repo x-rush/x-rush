@@ -68,7 +68,7 @@
   <text x="1180" y="34" class="mono" font-size="12" letter-spacing="1" fill="#B8F35A">ONLINE</text>
 
   <text x="64" y="96" class="mono" font-size="13" letter-spacing="1.4" fill="#5DEFFF">[ DEV_PROFILE // 0x2021 ]</text>
-  <text x="528" y="96" class="mono" font-size="11" fill="#63758C">v4.0</text>
+  <text x="528" y="96" class="mono" font-size="11" fill="#71869E">v4.0</text>
 
   <use href="#wordmark" transform="translate(5 5)" fill="#9D7CFF" opacity="0.2" shape-rendering="crispEdges"/>
   <use href="#wordmark" fill="url(#titleInk)" shape-rendering="crispEdges"/>
@@ -91,7 +91,7 @@
     <rect x="434" y="351" width="7" height="7" fill="#FF6B35" shape-rendering="crispEdges"/>
     <text x="451" y="360" fill="#AFC1D2">CONTENT</text>
   </g>
-  <text x="64" y="400" class="mono" font-size="11" letter-spacing="1.2" fill="#63758C">BUILDING IN PUBLIC SINCE 2021</text>
+  <text x="64" y="400" class="mono" font-size="11" letter-spacing="1.2" fill="#71869E">BUILDING IN PUBLIC SINCE 2021</text>
 
   <path d="M746 80H1114L1130 96V354L1114 370H746L730 354V96Z" fill="#0D1321"/>
   <g clip-path="url(#monitorClip)">
@@ -141,5 +141,5 @@
   <text x="1198" y="322" transform="rotate(-90 1198 322)" class="mono" font-size="12" letter-spacing="1.5" fill="#FF6B35">INDEX_OUT_OF_BOUNDS</text>
   <text x="752" y="340" class="mono" font-size="13" fill="#B8F35A">&gt; exception = intentional</text>
   <text x="752" y="359" class="mono" font-size="11" letter-spacing=".8" fill="#71869E">BREAK THE FRAME. KEEP THE SIGNAL.</text>
-  <text x="956" y="400" class="mono" font-size="11" letter-spacing="1.2" fill="#63758C">NO LIMITS // BY DESIGN</text>
+  <text x="956" y="400" class="mono" font-size="11" letter-spacing="1.2" fill="#71869E">NO LIMITS // BY DESIGN</text>
 </svg>
