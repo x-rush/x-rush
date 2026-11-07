@@ -56,22 +56,18 @@ rush@github:~ $ uptime
   <tr>
     <th>Quest · 任务</th>
     <th>Mission · 说明</th>
-    <th>ID</th>
   </tr>
   <tr>
-    <td><img src="assets/icons/draftdesk.svg" alt="" aria-hidden="true" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/draftdesk"><b>draftdesk</b></a></td>
+    <td><img src="assets/icons/draftdesk.svg" alt="" aria-hidden="true" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/draftdesk"><b>draftdesk</b></a><br><code>Q-01</code></td>
     <td>Self-hosted AI research &amp; editorial workbench with evidence-backed topics, trends and ideas<br>自托管 AI 研究与编辑工作台：有据可查的选题、趋势与灵感</td>
-    <td><code>Q-01</code></td>
   </tr>
   <tr>
-    <td><img src="assets/icons/app-dev-workflow.svg" alt="" aria-hidden="true" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/app-dev-workflow"><b>app-dev-workflow</b></a></td>
+    <td><img src="assets/icons/app-dev-workflow.svg" alt="" aria-hidden="true" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/app-dev-workflow"><b>app-dev-workflow</b></a><br><code>Q-02</code></td>
     <td>Six-stage app development workflow for AI coding agents (requirement → prototype → build → test → architect)<br>面向 AI 编程智能体的六阶段应用开发工作流技能</td>
-    <td><code>Q-02</code></td>
   </tr>
   <tr>
-    <td><img src="assets/icons/photo-retouch.svg" alt="" aria-hidden="true" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/photo-retouch"><b>photo-retouch</b></a></td>
+    <td><img src="assets/icons/photo-retouch.svg" alt="" aria-hidden="true" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/photo-retouch"><b>photo-retouch</b></a><br><code>Q-03</code></td>
     <td>Professional portrait retouching methodology — exhaustive analysis, single-shot generation, identity-anchor verification<br>专业人像修图方法论：穷尽分析、一次成图、身份锚点校验</td>
-    <td><code>Q-03</code></td>
   </tr>
 </table>
 
