@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="Video Forge pixel timeline icon">
+  <path d="M3 1H29L31 3V29L29 31H3L1 29V3Z" fill="#0D1321" stroke="#294154"/>
+  <g shape-rendering="crispEdges">
+    <path d="M5 7H27V24H5V7ZM8 10V21H24V10H8Z" fill="#9D7CFF"/>
+    <path d="M14 12H17V14H19V16H21V18H19V20H17V22H14V20H12V14H14Z" fill="#5DEFFF"/>
+    <rect x="15" y="15" width="3" height="4" fill="#D7E1EA"/>
+    <rect x="7" y="26" width="4" height="2" fill="#5DEFFF"/>
+    <rect x="13" y="26" width="4" height="2" fill="#9D7CFF"/>
+    <rect x="19" y="26" width="6" height="2" fill="#B8F35A"/>
+  </g>
+</svg>
