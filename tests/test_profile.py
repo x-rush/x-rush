@@ -11,6 +11,8 @@ SVG_NS = "http://www.w3.org/2000/svg"
 NEW_ASSETS = (
     ASSETS / "banner.svg",
     ASSETS / "footer.svg",
+    ASSETS / "banner-mobile.svg",
+    ASSETS / "footer-mobile.svg",
     ASSETS / "icons" / "draftdesk.svg",
     ASSETS / "icons" / "app-dev-workflow.svg",
     ASSETS / "icons" / "photo-retouch.svg",
@@ -42,6 +44,19 @@ class ProfileAssetTests(unittest.TestCase):
         source = (ASSETS / "banner.svg").read_text(encoding="utf-8")
         self.assertIn("@media (prefers-reduced-motion: reduce)", source)
         self.assertRegex(source, r"animation:\s*none")
+
+    def test_mobile_artwork_has_readable_canvas_and_type(self):
+        cases = (("banner-mobile.svg", "0 0 640 640", 18), ("footer-mobile.svg", "0 0 640 240", 20))
+        for name, view_box, minimum_font_size in cases:
+            with self.subTest(asset=name):
+                path = ASSETS / name
+                self.assertTrue(path.is_file(), f"Missing mobile artwork: {name}")
+                root = ET.parse(path).getroot()
+                self.assertEqual(view_box, root.get("viewBox"))
+                text_elements = list(root.iter(f"{{{SVG_NS}}}text"))
+                self.assertTrue(text_elements)
+                for text in text_elements:
+                    self.assertGreaterEqual(float(text.get("font-size", "0")), minimum_font_size)
 
     def test_svg_assets_are_accessible(self):
         for path in ASSETS.rglob("*.svg"):
@@ -78,12 +93,15 @@ class ProfileMarkupParser(HTMLParser):
     def __init__(self):
         super().__init__()
         self.images = []
+        self.sources = []
         self.source_sets = []
 
     def handle_starttag(self, tag, attrs):
         attributes = dict(attrs)
         if tag == "img":
             self.images.append(attributes)
+        if tag == "source":
+            self.sources.append(attributes)
         if tag == "source" and attributes.get("srcset"):
             self.source_sets.append(attributes["srcset"])
 
@@ -139,6 +157,14 @@ class ProfileReadmeTests(unittest.TestCase):
         self.assertNotIn("readme-typing-svg", self.source)
         self.assertNotIn("capsule-render", self.source)
 
+    def test_narrow_screens_get_dedicated_artwork(self):
+        mobile_sources = [
+            source.get("srcset")
+            for source in self.parser.sources
+            if source.get("media") == "(max-width: 640px)"
+        ]
+        self.assertCountEqual(["assets/banner-mobile.svg", "assets/footer-mobile.svg"], mobile_sources)
+
     def test_images_have_alt_text_and_local_files_exist(self):
         for image in self.parser.images:
             with self.subTest(image=image.get("src")):
@@ -154,7 +180,7 @@ class ProfileReadmeTests(unittest.TestCase):
 
     def test_readme_has_no_fixed_width_page_container(self):
         self.assertNotIn("min-width", self.source)
-        self.assertNotIn("width:", self.source)
+        self.assertNotRegex(self.source, r"(?<![a-zA-Z-])width\s*:")
         self.assertNotIn("<table width", self.source)
         self.assertNotIn("<details", self.source.lower())
 
@@ -186,7 +212,7 @@ class ProfileReadmeTests(unittest.TestCase):
         self.assertGreaterEqual(self.source.count('media="(prefers-color-scheme: dark)"'), 2)
         self.assertTrue("github-profile-summary-cards.vercel.app/api/cards/stats" in self.source, "Missing stats card")
         self.assertTrue("github-profile-summary-cards.vercel.app/api/cards/most-commit-language" in self.source, "Missing language card")
-        self.assertTrue("theme=github_dark" in self.source, "Missing dark stats theme")
+        self.assertTrue("theme=tokyonight" in self.source, "Missing accessible dark stats theme")
         self.assertTrue("theme=default" in self.source, "Missing light stats theme")
         self.assertNotIn("github-readme-stats.vercel.app", self.source)
 

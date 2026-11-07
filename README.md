@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="X-RUSH pixel developer console — one developer, full party" width="100%" />
+  <picture>
+    <source media="(max-width: 640px)" srcset="assets/banner-mobile.svg" />
+    <img src="assets/banner.svg" alt="X-RUSH pixel developer console — one developer, full party" width="100%" />
+  </picture>
 </p>
 
 <p align="center">
@@ -184,11 +187,11 @@ VIDEO FORGE ─┘
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=x-rush&amp;theme=github_dark" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=x-rush&amp;theme=tokyonight" />
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=x-rush&amp;theme=default" alt="GitHub Stats" height="200" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=x-rush&amp;theme=github_dark" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=x-rush&amp;theme=tokyonight" />
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=x-rush&amp;theme=default" alt="Top Languages by Commit" height="200" />
   </picture>
 </p>
@@ -214,5 +217,8 @@ venture  04  cross-border e-commerce             # 跨境电商
 </p>
 
 <p align="center">
-  <img src="assets/footer.svg" alt="X-RUSH pixel footer — building beyond the limit" width="100%" />
+  <picture>
+    <source media="(max-width: 640px)" srcset="assets/footer-mobile.svg" />
+    <img src="assets/footer.svg" alt="X-RUSH pixel footer — building beyond the limit" width="100%" />
+  </picture>
 </p>

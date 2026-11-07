@@ -37,20 +37,21 @@ This fails if it looks like a generic neon cyberpunk template, sacrifices readab
 
 ## Page Structure
 
-1. **Hero** — local `assets/banner.svg`; X-RUSH, `ONE DEVELOPER. FULL PARTY.`, product lines and an out-of-bounds pixel entity.
+1. **Hero** — a responsive `<picture>` using local `assets/banner.svg` on desktop and `assets/banner-mobile.svg` at widths up to 640px; X-RUSH, `ONE DEVELOPER. FULL PARTY.`, product lines and an out-of-bounds pixel entity. The mobile composition is `640 × 640` with all SVG text at least 18px before scaling.
 2. **01 / WHOAMI** — compact terminal identity, mission and motto.
 3. **02 / PARTY MEMBERS** — four slots: ENGINEER, ARCHITECT, BUILDER, SCOUT, mapped to engines, workflows, apps and content.
 4. **03 / ACTIVE QUESTS** — existing draftdesk, app-dev-workflow and photo-retouch links and bilingual descriptions, with custom pixel icons.
 5. **04 / FORGE SYSTEM** — existing image-forge, music-forge and video-forge links and bilingual descriptions, presented as one connected engine family.
 6. **05 / INVENTORY** — all 39 existing badges in the existing six categories, fully visible. Category labels use slot numbers and counts. Badge sources retain `for-the-badge` height; local badge SVGs remain 28px high.
-7. **06 / SYSTEM METRICS** — GitHub stats and top languages with light/dark variants. The original stats provider returned HTTP 503 during implementation, so use the verified summary-card provider and its native dark/light palettes.
+7. **06 / SYSTEM METRICS** — GitHub stats and top languages with light/dark variants. The original stats provider returned HTTP 503 during implementation, so use the verified summary-card provider with `tokyonight` in dark mode and `default` in light mode. The dark `#70a5fd` headings on `#1a1b27` provide approximately 6.90:1 contrast.
 8. **07 / CURRENTLY** — preserve all four current venture lines.
-9. **Footer** — local pixel footer, build status and follow link.
+9. **Footer** — responsive local pixel footer using `assets/footer.svg` on desktop and the large-type `640 × 240` `assets/footer-mobile.svg` at widths up to 640px, plus build status and follow link.
 
 ## Assets
 
 - Modify `assets/banner.svg`.
 - Create `assets/footer.svg`.
+- Create `assets/banner-mobile.svg` and `assets/footer-mobile.svg` as static, large-type narrow-screen variants.
 - Create six self-contained pixel icons under `assets/icons/`: `draftdesk.svg`, `app-dev-workflow.svg`, `photo-retouch.svg`, `image-forge.svg`, `music-forge.svg`, `video-forge.svg`.
 - Existing local badge files stay in use. No external icon font or remote pixel asset is required.
 

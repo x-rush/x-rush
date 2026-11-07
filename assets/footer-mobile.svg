@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">X-RUSH mobile footer — Beyond the limit</title>
+  <desc id="desc">Large-type mobile footer: building in public since 2021, one developer full party, next checkpoint beyond the limit.</desc>
+  <path d="M12 2H628L638 12V228L626 238H12L2 228V12Z" fill="#070A12" stroke="#263A4E" stroke-width="2"/>
+  <path d="M2 62H638" stroke="#263A4E"/>
+  <g shape-rendering="crispEdges">
+    <rect x="24" y="27" width="10" height="10" fill="#5DEFFF"/>
+    <rect x="44" y="27" width="10" height="10" fill="#9D7CFF"/>
+    <rect x="550" y="27" width="60" height="8" fill="#B8F35A"/>
+  </g>
+  <text x="72" y="41" font-family="ui-monospace, Consolas, monospace" font-size="20" letter-spacing="1" fill="#91A3B8">X-RUSH // EOF</text>
+  <text x="32" y="105" font-family="ui-monospace, Consolas, monospace" font-size="24" fill="#5DEFFF">BUILDING IN PUBLIC</text>
+  <text x="32" y="141" font-family="ui-monospace, Consolas, monospace" font-size="24" fill="#5DEFFF">SINCE 2021</text>
+  <text x="352" y="101" font-family="ui-monospace, Consolas, monospace" font-size="20" fill="#9D7CFF">NEXT CHECKPOINT:</text>
+  <text x="352" y="139" font-family="ui-monospace, Consolas, monospace" font-size="24" font-weight="700" fill="#D7E1EA">BEYOND THE LIMIT_</text>
+  <text x="32" y="194" font-family="ui-monospace, Consolas, monospace" font-size="20" fill="#D7E1EA">ONE DEV. FULL PARTY. ALWAYS SHIPPING.</text>
+  <rect x="32" y="214" width="576" height="4" fill="#0D1321"/>
+  <rect x="32" y="214" width="426" height="4" fill="#B8F35A"/>
+</svg>
