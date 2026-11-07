@@ -13,13 +13,23 @@ NEW_ASSETS = (
     ASSETS / "footer.svg",
     ASSETS / "banner-mobile.svg",
     ASSETS / "footer-mobile.svg",
+    ASSETS / "divider.svg",
     ASSETS / "icons" / "draftdesk.svg",
     ASSETS / "icons" / "app-dev-workflow.svg",
     ASSETS / "icons" / "photo-retouch.svg",
     ASSETS / "icons" / "image-forge.svg",
     ASSETS / "icons" / "music-forge.svg",
     ASSETS / "icons" / "video-forge.svg",
+    ASSETS / "sprites" / "engineer.svg",
+    ASSETS / "sprites" / "architect.svg",
+    ASSETS / "sprites" / "builder.svg",
+    ASSETS / "sprites" / "scout.svg",
 )
+
+CJK = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]")
+DECORATIVE_PREFIXES = ("assets/icons/", "assets/sprites/", "assets/divider.svg")
+DARK_BADGE = "0D1321"
+ACCENT_INK = "5DEFFF"
 
 
 def local_name(tag):
@@ -110,8 +120,13 @@ class ProfileAssetTests(unittest.TestCase):
         for name in ("aliyun-badge.svg", "tanstack-badge.svg", "tauri-badge.svg"):
             with self.subTest(asset=name):
                 root = ET.parse(ASSETS / name).getroot()
+                source = (ASSETS / name).read_text(encoding="utf-8")
                 self.assertEqual("28", root.get("height"))
                 self.assertTrue(re.fullmatch(r"[0-9.]+", root.get("width", "")))
+                self.assertIn(f'fill="#{DARK_BADGE}"', source, "Local badge is not on the dark palette")
+                self.assertNotIn("#0d9488", source.lower())
+                self.assertNotIn("#24c8db", source.lower())
+                self.assertNotIn("#ff6a00", source.lower())
 
 
 class ProfileMarkupParser(HTMLParser):
@@ -143,7 +158,23 @@ class ProfileReadmeTests(unittest.TestCase):
         inventory = self.source.split("## 05 / INVENTORY", 1)[1].split("## 06 / SYSTEM METRICS", 1)[0]
         parser = ProfileMarkupParser()
         parser.feed(inventory)
-        return parser.images
+        return [image for image in parser.images if image.get("aria-hidden") != "true"]
+
+    def test_terminal_panes_fit_a_narrow_screen(self):
+        """Overflowing lines sit behind a horizontal scrollbar, which hides the Chinese on phones."""
+        wide = re.compile(r"[\u3000-\u303f\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uff00-\uffef]")
+
+        def columns(line):
+            return sum(2 if wide.match(char) else 1 for char in line)
+
+        fenced, offenders = False, []
+        for number, line in enumerate(self.source.splitlines(), start=1):
+            if line.startswith("```"):
+                fenced = not fenced
+                continue
+            if fenced and columns(line) > 46:
+                offenders.append(f"{number}: {columns(line)} columns — {line}")
+        self.assertEqual([], offenders, "Terminal pane lines must fit a 390px screen")
 
     def test_profile_has_the_seven_console_sections(self):
         for heading in (
@@ -157,11 +188,34 @@ class ProfileReadmeTests(unittest.TestCase):
         ):
             self.assertTrue(heading in self.source, f"Missing section: {heading}")
 
-    def test_quest_ids_live_with_projects_without_an_extra_column(self):
-        self.assertNotIn("<th>ID</th>", self.source)
-        self.assertNotIn("<th>Status</th>", self.source)
+    def test_body_stays_a_terminal_transcript(self):
+        """The banner sets a console idiom; the body must not fall back to prose tables."""
+        self.assertNotIn("<table", self.source)
+        self.assertNotRegex(self.source, r"^\s*\|.*\|\s*$")
+        self.assertNotIn("---|", self.source.replace(" ", ""))
         for quest_id in ("Q-01", "Q-02", "Q-03"):
-            self.assertIn(quest_id, self.source)
+            self.assertEqual(1, self.source.count(quest_id), f"Quest id must appear once: {quest_id}")
+
+    def test_every_section_opens_with_a_prompt_line(self):
+        sections = re.split(r"^## ", self.source, flags=re.M)[1:]
+        self.assertEqual(7, len(sections), "Expected exactly seven console sections")
+        for section in sections:
+            heading = section.splitlines()[0]
+            with self.subTest(section=heading):
+                self.assertTrue(section.lstrip().startswith(heading))
+                self.assertIn("```bash", section, f"Section lacks a terminal pane: {heading}")
+                self.assertIn("rush@github:~$", section, f"Section lacks a prompt line: {heading}")
+
+    def test_chinese_is_only_rendered_as_terminal_comments(self):
+        """English reads as output, Chinese reads as `#` comments — the one shared rule."""
+        offenders = []
+        for number, line in enumerate(self.source.splitlines(), start=1):
+            match = CJK.search(line)
+            if match and "#" not in line[: match.start()]:
+                offenders.append(f"{number}: {line.strip()}")
+        self.assertEqual([], offenders, "Chinese text must be introduced by a # comment")
+        commented = [line for line in self.source.splitlines() if CJK.search(line)]
+        self.assertGreaterEqual(len(commented), 25, "Expected Chinese commentary throughout the transcript")
 
     def test_original_projects_and_current_ventures_survive(self):
         for project in (
@@ -200,9 +254,9 @@ class ProfileReadmeTests(unittest.TestCase):
         for image in self.parser.images:
             with self.subTest(image=image.get("src")):
                 src = image.get("src", "")
-                if src.startswith("assets/icons/"):
-                    self.assertEqual("", image.get("alt"))
-                    self.assertEqual("true", image.get("aria-hidden"))
+                if src.startswith(DECORATIVE_PREFIXES):
+                    self.assertEqual("", image.get("alt"), src)
+                    self.assertEqual("true", image.get("aria-hidden"), src)
                 else:
                     self.assertTrue(image.get("alt", "").strip(), f"Missing alt text: {src}")
                 if src and not src.startswith(("https://", "http://", "data:")):
@@ -241,6 +295,18 @@ class ProfileReadmeTests(unittest.TestCase):
                 if src.endswith("-badge.svg"):
                     root = ET.parse(ROOT / src).getroot()
                     self.assertEqual("28", root.get("height"))
+
+    def test_inventory_badges_share_one_dark_terminal_palette(self):
+        """39 badges, one plate colour, one logo ink — a loadout grid, not a rainbow."""
+        for image in self.inventory_images():
+            src = image.get("src", "")
+            with self.subTest(badge=image.get("alt")):
+                if "img.shields.io" in src:
+                    self.assertIn(DARK_BADGE, src, "Badge is off the terminal palette")
+                    if "logo=" in src:
+                        self.assertIn(f"logoColor={ACCENT_INK}", src, "Badge logo is off the accent ink")
+                elif src.endswith("-badge.svg"):
+                    self.assertIn(f'fill="#{DARK_BADGE}"', (ROOT / src).read_text(encoding="utf-8"))
 
     def test_stats_keep_light_and_dark_picture_variants(self):
         self.assertGreaterEqual(self.source.count("<picture>"), 2)

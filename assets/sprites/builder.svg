@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="Builder pixel sprite — a green brick stack">
+  <title>Builder pixel sprite — a green brick stack</title>
+  <path d="M4 1H36L39 4V36L36 39H4L1 36V4Z" fill="#0D1321" stroke="#294154"/>
+  <g shape-rendering="crispEdges">
+    <rect x="9" y="9" width="10" height="2" fill="#B8F35A"/>
+    <rect x="21" y="9" width="10" height="2" fill="#B8F35A"/>
+    <rect x="9" y="11" width="10" height="2" fill="#B8F35A"/>
+    <rect x="21" y="11" width="10" height="2" fill="#B8F35A"/>
+    <rect x="9" y="13" width="10" height="2" fill="#B8F35A"/>
+    <rect x="21" y="13" width="10" height="2" fill="#B8F35A"/>
+    <rect x="9" y="17" width="6" height="2" fill="#B8F35A"/>
+    <rect x="17" y="17" width="10" height="2" fill="#B8F35A"/>
+    <rect x="9" y="19" width="6" height="2" fill="#B8F35A"/>
+    <rect x="17" y="19" width="10" height="2" fill="#B8F35A"/>
+    <rect x="9" y="21" width="6" height="2" fill="#B8F35A"/>
+    <rect x="17" y="21" width="10" height="2" fill="#B8F35A"/>
+    <rect x="9" y="25" width="10" height="2" fill="#B8F35A"/>
+    <rect x="21" y="25" width="10" height="2" fill="#B8F35A"/>
+    <rect x="9" y="27" width="10" height="2" fill="#B8F35A"/>
+    <rect x="21" y="27" width="10" height="2" fill="#B8F35A"/>
+    <rect x="9" y="29" width="10" height="2" fill="#B8F35A"/>
+    <rect x="21" y="29" width="10" height="2" fill="#B8F35A"/>
+  </g>
+</svg>
