@@ -56,20 +56,20 @@ rush@github:~ $ uptime
   <tr>
     <th>Quest · 任务</th>
     <th>Mission · 说明</th>
-    <th>Status</th>
+    <th>ID</th>
   </tr>
   <tr>
-    <td><img src="assets/icons/draftdesk.svg" alt="DraftDesk pixel icon" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/draftdesk"><b>draftdesk</b></a></td>
+    <td><img src="assets/icons/draftdesk.svg" alt="" aria-hidden="true" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/draftdesk"><b>draftdesk</b></a></td>
     <td>Self-hosted AI research &amp; editorial workbench with evidence-backed topics, trends and ideas<br>自托管 AI 研究与编辑工作台：有据可查的选题、趋势与灵感</td>
     <td><code>Q-01</code></td>
   </tr>
   <tr>
-    <td><img src="assets/icons/app-dev-workflow.svg" alt="App development workflow pixel icon" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/app-dev-workflow"><b>app-dev-workflow</b></a></td>
+    <td><img src="assets/icons/app-dev-workflow.svg" alt="" aria-hidden="true" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/app-dev-workflow"><b>app-dev-workflow</b></a></td>
     <td>Six-stage app development workflow for AI coding agents (requirement → prototype → build → test → architect)<br>面向 AI 编程智能体的六阶段应用开发工作流技能</td>
     <td><code>Q-02</code></td>
   </tr>
   <tr>
-    <td><img src="assets/icons/photo-retouch.svg" alt="Photo retouch pixel icon" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/photo-retouch"><b>photo-retouch</b></a></td>
+    <td><img src="assets/icons/photo-retouch.svg" alt="" aria-hidden="true" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/photo-retouch"><b>photo-retouch</b></a></td>
     <td>Professional portrait retouching methodology — exhaustive analysis, single-shot generation, identity-anchor verification<br>专业人像修图方法论：穷尽分析、一次成图、身份锚点校验</td>
     <td><code>Q-03</code></td>
   </tr>
@@ -95,17 +95,17 @@ VIDEO FORGE ─┘
     <th>Channels · 通道</th>
   </tr>
   <tr>
-    <td><img src="assets/icons/image-forge.svg" alt="Image Forge pixel icon" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/image-forge"><b>image-forge</b></a></td>
+    <td><img src="assets/icons/image-forge.svg" alt="" aria-hidden="true" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/image-forge"><b>image-forge</b></a></td>
     <td>Multi-channel AI image generation engine — model registry, edit-endpoint routing &amp; spend budgeting<br>多通道 AI 生图引擎：模型注册表、编辑路由、预算管控</td>
     <td>fal.ai · Replicate</td>
   </tr>
   <tr>
-    <td><img src="assets/icons/music-forge.svg" alt="Music Forge pixel icon" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/music-forge"><b>music-forge</b></a></td>
+    <td><img src="assets/icons/music-forge.svg" alt="" aria-hidden="true" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/music-forge"><b>music-forge</b></a></td>
     <td>Multi-channel AI music engine, model routing via one JSON registry, zero dependencies<br>多通道 AI 音乐引擎：单一注册表路由模型，零依赖</td>
     <td>Suno · Mureka</td>
   </tr>
   <tr>
-    <td><img src="assets/icons/video-forge.svg" alt="Video Forge pixel icon" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/video-forge"><b>video-forge</b></a></td>
+    <td><img src="assets/icons/video-forge.svg" alt="" aria-hidden="true" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/video-forge"><b>video-forge</b></a></td>
     <td>Multi-channel AI video engine — generation, voiceover &amp; ffmpeg assembly<br>多通道 AI 视频引擎：生成、配音与成片组装</td>
     <td>Wan3.0 · Seedance · ffmpeg</td>
   </tr>
