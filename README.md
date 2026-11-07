@@ -1,33 +1,28 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="x-rush — one developer, shipping like a team" width="100%" />
+  <img src="assets/banner.svg" alt="X-RUSH pixel developer console — one developer, full party" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://readme-typing-svg.demolab.com">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=FF6B35&center=true&vCenter=true&width=680&height=50&lines=one+developer%2C+shipping+like+a+team%3B%E4%B8%80%E4%B8%AA%E4%BA%BA%EF%BC%8C%E4%B8%80%E6%94%AF%E6%88%98%E9%98%9F%3Bengines+%C2%B7+workflows+%C2%B7+apps+%C2%B7+content" alt="Typing SVG" />
-  </a>
+  <code>STATUS: ONLINE</code> · <code>ROLE: TOOLSMITH FOR AI AGENTS</code> · <code>EXCEPTION: INTENTIONAL</code>
 </p>
 
 ---
 
-## ⚡ `whoami`
+## 01 / WHOAMI
 
 ```bash
 rush@github:~ $ whoami
-Rushing Lee · one developer, shipping like a team
-#     一个人，一支战队的产出：引擎 · 工作流 · 应用 · 内容
+Rushing Lee — Toolsmith for AI Agents
+一个人，一支战队：引擎 · 工作流 · 应用 · 内容
 
-rush@github:~ $ cat team.manifest
-engines     ->  image-forge · music-forge · video-forge
-workflows   ->  app-dev-workflow
-apps        ->  draftdesk · rednote-vibe-tools · dishes-menu
-content     ->  skills & tutorials, shipped in public
-#     引擎 · 工作流 · 应用 · 内容 —— 四条产品线，一人全栈
+rush@github:~ $ cat mission.txt
+one developer, shipping like a team
+build engines, workflows and apps that actually ship.
 
-rush@github:~ $ echo "$MOTTO"
+rush@github:~ $ echo "$EXCEPTION"
 我是 x-rush，一个总想突破界限、跳出常规的人——去做那个「下标越界」的异常。
-#     "Always pushing past boundaries, breaking out of convention —
-#      be the out-of-bounds exception."  — x-rush
+"Always pushing past boundaries, breaking out of convention —
+ be the out-of-bounds exception." — x-rush
 
 rush@github:~ $ uptime
 [##########] building in public since 2021 ...
@@ -35,55 +30,79 @@ rush@github:~ $ uptime
 
 ---
 
-## 🛠️ `ls ~/builds/` — Workflows & Apps · 工作流与应用
+## 02 / PARTY MEMBERS
 
-> Not just tools — the workflows that make agents actually ship.
+> **ONE PERSON. FOUR CLASSES. FULL PARTY.**
+> 不是一个人硬撑，而是让引擎、工作流、应用与内容协同作战。
+
+| SLOT | CLASS | LOADOUT | MISSION |
+|---|---|---|---|
+| `01` | **ENGINEER** | image-forge · music-forge · video-forge | 锻造多通道生成引擎 |
+| `02` | **ARCHITECT** | app-dev-workflow | 设计让智能体真正交付的工作流 |
+| `03` | **BUILDER** | draftdesk · rednote-vibe-tools · dishes-menu | 构建可用、好看的创意应用 |
+| `04` | **SCOUT** | skills & tutorials, shipped in public | 探索方法，并公开分享技能与教程 |
+
+---
+
+## 03 / ACTIVE QUESTS
+
+> **NOT JUST TOOLS — THE WORKFLOWS THAT MAKE AGENTS ACTUALLY SHIP.**
 > 不止造工具，还造让智能体真正「交付」的工作流。
 
 <table>
   <tr>
-    <th width="215">Project 项目</th>
-    <th>What it is 说明</th>
+    <th>Quest · 任务</th>
+    <th>Mission · 说明</th>
+    <th>Status</th>
   </tr>
   <tr>
-    <td>📝 <a href="https://github.com/x-rush/draftdesk"><b>draftdesk</b></a></td>
+    <td><img src="assets/icons/draftdesk.svg" alt="DraftDesk pixel icon" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/draftdesk"><b>draftdesk</b></a></td>
     <td>Self-hosted AI research &amp; editorial workbench with evidence-backed topics, trends and ideas<br>自托管 AI 研究与编辑工作台：有据可查的选题、趋势与灵感</td>
+    <td><code>Q-01</code></td>
   </tr>
   <tr>
-    <td>🧭 <a href="https://github.com/x-rush/app-dev-workflow"><b>app-dev-workflow</b></a></td>
+    <td><img src="assets/icons/app-dev-workflow.svg" alt="App development workflow pixel icon" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/app-dev-workflow"><b>app-dev-workflow</b></a></td>
     <td>Six-stage app development workflow for AI coding agents (requirement → prototype → build → test → architect)<br>面向 AI 编程智能体的六阶段应用开发工作流技能</td>
+    <td><code>Q-02</code></td>
   </tr>
   <tr>
-    <td>📸 <a href="https://github.com/x-rush/photo-retouch"><b>photo-retouch</b></a></td>
+    <td><img src="assets/icons/photo-retouch.svg" alt="Photo retouch pixel icon" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/photo-retouch"><b>photo-retouch</b></a></td>
     <td>Professional portrait retouching methodology — exhaustive analysis, single-shot generation, identity-anchor verification<br>专业人像修图方法论：穷尽分析、一次成图、身份锚点校验</td>
+    <td><code>Q-03</code></td>
   </tr>
 </table>
 
 ---
 
-## 🔥 `ls ~/forges/` — The Forge Series · 锻造系列
+## 04 / FORGE SYSTEM
 
-> Multi-channel generation engines that plug straight into coding agents — one JSON registry, zero drama.
-> 可直接接入编程智能体的多通道生成引擎 —— 一个 JSON 注册表，零依赖、零折腾。
+> **MULTI-CHANNEL GENERATION ENGINES — ONE JSON REGISTRY, ZERO DRAMA.**
+> 可直接接入编程智能体的多通道生成引擎：一个 JSON 注册表，零依赖、零折腾。
+
+```text
+IMAGE FORGE ─┐
+MUSIC FORGE ─┼──> AGENT CREATIVE ENGINE
+VIDEO FORGE ─┘
+```
 
 <table>
   <tr>
-    <th width="180">Engine 引擎</th>
-    <th>What it does 功能</th>
-    <th width="170">Powered by 通道</th>
+    <th>Core · 核心</th>
+    <th>Capability · 功能</th>
+    <th>Channels · 通道</th>
   </tr>
   <tr>
-    <td>⚒️ <a href="https://github.com/x-rush/image-forge"><b>image-forge</b></a></td>
+    <td><img src="assets/icons/image-forge.svg" alt="Image Forge pixel icon" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/image-forge"><b>image-forge</b></a></td>
     <td>Multi-channel AI image generation engine — model registry, edit-endpoint routing &amp; spend budgeting<br>多通道 AI 生图引擎：模型注册表、编辑路由、预算管控</td>
     <td>fal.ai · Replicate</td>
   </tr>
   <tr>
-    <td>🎵 <a href="https://github.com/x-rush/music-forge"><b>music-forge</b></a></td>
+    <td><img src="assets/icons/music-forge.svg" alt="Music Forge pixel icon" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/music-forge"><b>music-forge</b></a></td>
     <td>Multi-channel AI music engine, model routing via one JSON registry, zero dependencies<br>多通道 AI 音乐引擎：单一注册表路由模型，零依赖</td>
     <td>Suno · Mureka</td>
   </tr>
   <tr>
-    <td>🎬 <a href="https://github.com/x-rush/video-forge"><b>video-forge</b></a></td>
+    <td><img src="assets/icons/video-forge.svg" alt="Video Forge pixel icon" width="32" height="32" align="absmiddle" /> <a href="https://github.com/x-rush/video-forge"><b>video-forge</b></a></td>
     <td>Multi-channel AI video engine — generation, voiceover &amp; ffmpeg assembly<br>多通道 AI 视频引擎：生成、配音与成片组装</td>
     <td>Wan3.0 · Seedance · ffmpeg</td>
   </tr>
@@ -91,10 +110,13 @@ rush@github:~ $ uptime
 
 ---
 
-## 🧰 `cat toolbox.json` — Toolbox · 工具箱
+## 05 / INVENTORY
 
-<p align="left"><b>💻 Languages · 语言</b></p>
-<p align="left">
+> **`39 MODULES INSTALLED // FULL PARTY LOADOUT // ALL SYSTEMS READY`**
+> 完整装备库，全模块展开。
+
+<p><b>[01] LANG.SYS [07] — Languages · 语言</b></p>
+<p>
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
@@ -104,22 +126,20 @@ rush@github:~ $ uptime
   <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
 </p>
 
-<p align="left"><b>🌐 Frontend · 前端</b></p>
-<p align="left">
+<p><b>[02] FRONTEND.SYS [08] — Frontend · 前端</b></p>
+<p>
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue" />
+  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue.js" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-</p>
-<p align="left">
-  <img src="https://img.shields.io/badge/TanStack-0D9488?style=for-the-badge" alt="TanStack" />
+  <img src="assets/tanstack-badge.svg" alt="TanStack" />
   <img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Native" />
   <img src="assets/tauri-badge.svg" alt="Tauri" />
   <img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA" />
 </p>
 
-<p align="left"><b>⚙️ Backend Frameworks · 后端框架</b></p>
-<p align="left">
+<p><b>[03] BACKEND.SYS [05] — Backend Frameworks · 后端框架</b></p>
+<p>
   <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" />
@@ -127,8 +147,8 @@ rush@github:~ $ uptime
   <img src="https://img.shields.io/badge/Gin-008ECF?style=for-the-badge&logo=gin&logoColor=white" alt="Gin" />
 </p>
 
-<p align="left"><b>🗄️ Databases · 数据库</b></p>
-<p align="left">
+<p><b>[04] DATABASE.SYS [05] — Databases · 数据库</b></p>
+<p>
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
@@ -136,14 +156,12 @@ rush@github:~ $ uptime
   <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
 </p>
 
-<p align="left"><b>🛠️ DevOps &amp; Cloud · 运维与云</b></p>
-<p align="left">
+<p><b>[05] DEVOPS.SYS [09] — DevOps &amp; Cloud · 运维与云</b></p>
+<p>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
   <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-</p>
-<p align="left">
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
@@ -151,8 +169,8 @@ rush@github:~ $ uptime
   <img src="assets/aliyun-badge.svg" alt="Aliyun" />
 </p>
 
-<p align="left"><b>🧠 AI &amp; Media Engineering · AI 与多媒体工程</b></p>
-<p align="left">
+<p><b>[06] AI_MEDIA.SYS [05] — AI &amp; Media Engineering · AI 与多媒体工程</b></p>
+<p>
   <img src="https://img.shields.io/badge/fal.ai-FF6B35?style=for-the-badge" alt="fal.ai" />
   <img src="https://img.shields.io/badge/Replicate-1C1C1C?style=for-the-badge" alt="Replicate" />
   <img src="https://img.shields.io/badge/ffmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white" alt="ffmpeg" />
@@ -162,22 +180,22 @@ rush@github:~ $ uptime
 
 ---
 
-## 📊 `tail -f stats.log`
+## 06 / SYSTEM METRICS
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=x-rush&show_icons=true&hide_border=true&bg_color=0d1117&title_color=FF6B35&icon_color=FFD23F&text_color=c9d1d9&count_private=true" />
-    <img src="https://github-readme-stats.vercel.app/api?username=x-rush&show_icons=true&hide_border=true&bg_color=f6f8fa&title_color=E8590C&icon_color=E8590C&text_color=24292f&count_private=true" alt="GitHub Stats" height="165" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=x-rush&amp;show_icons=true&amp;hide_border=true&amp;bg_color=070A12&amp;title_color=5DEFFF&amp;icon_color=9D7CFF&amp;text_color=D7E1EA&amp;count_private=true" />
+    <img src="https://github-readme-stats.vercel.app/api?username=x-rush&amp;show_icons=true&amp;hide_border=true&amp;bg_color=F6F8FA&amp;title_color=087F8C&amp;icon_color=6D4CC4&amp;text_color=24292F&amp;count_private=true" alt="GitHub Stats" height="165" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=x-rush&layout=compact&hide_border=true&bg_color=0d1117&title_color=FF6B35&text_color=c9d1d9&langs_count=8" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=x-rush&layout=compact&hide_border=true&bg_color=f6f8fa&title_color=E8590C&text_color=24292f&langs_count=8" alt="Top Languages" height="165" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=x-rush&amp;layout=compact&amp;hide_border=true&amp;bg_color=070A12&amp;title_color=5DEFFF&amp;icon_color=9D7CFF&amp;text_color=D7E1EA&amp;langs_count=8" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=x-rush&amp;layout=compact&amp;hide_border=true&amp;bg_color=F6F8FA&amp;title_color=087F8C&amp;icon_color=6D4CC4&amp;text_color=24292F&amp;langs_count=8" alt="Top Languages" height="165" />
   </picture>
 </p>
 
 ---
 
-## 🌱 `ps aux | grep now` — Currently · 正在进行
+## 07 / CURRENTLY
 
 ```bash
 rush@github:~ $ ps aux | grep now
@@ -191,12 +209,10 @@ venture  04  cross-border e-commerce             # 跨境电商
 
 <p align="center">
   <a href="https://github.com/x-rush?tab=follow">
-    <img src="https://img.shields.io/badge/follow%20%40x--rush-FF6B35?style=for-the-badge&logo=github&logoColor=white" alt="Follow @x-rush" />
+    <img src="https://img.shields.io/badge/FOLLOW%20%40X--RUSH-0D1321?style=for-the-badge&logo=github&logoColor=5DEFFF&labelColor=070A12&color=0D1321" alt="Follow @x-rush" />
   </a>
 </p>
 
 <p align="center">
-  <picture>
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFD23F,100:FF6B35&height=120&section=footer" alt="footer" width="100%" />
-  </picture>
+  <img src="assets/footer.svg" alt="X-RUSH pixel footer — building beyond the limit" width="100%" />
 </p>

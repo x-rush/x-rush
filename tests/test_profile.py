@@ -1,3 +1,4 @@
+from html.parser import HTMLParser
 from pathlib import Path
 import re
 import unittest
@@ -71,6 +72,121 @@ class ProfileAssetTests(unittest.TestCase):
                 root = ET.parse(ASSETS / name).getroot()
                 self.assertEqual("28", root.get("height"))
                 self.assertTrue(re.fullmatch(r"[0-9.]+", root.get("width", "")))
+
+
+class ProfileMarkupParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.images = []
+        self.source_sets = []
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        if tag == "img":
+            self.images.append(attributes)
+        if tag == "source" and attributes.get("srcset"):
+            self.source_sets.append(attributes["srcset"])
+
+
+class ProfileReadmeTests(unittest.TestCase):
+    def setUp(self):
+        self.source = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.parser = ProfileMarkupParser()
+        self.parser.feed(self.source)
+
+    def inventory_images(self):
+        if "## 05 / INVENTORY" not in self.source or "## 06 / SYSTEM METRICS" not in self.source:
+            return []
+        inventory = self.source.split("## 05 / INVENTORY", 1)[1].split("## 06 / SYSTEM METRICS", 1)[0]
+        parser = ProfileMarkupParser()
+        parser.feed(inventory)
+        return parser.images
+
+    def test_profile_has_the_seven_console_sections(self):
+        for heading in (
+            "## 01 / WHOAMI",
+            "## 02 / PARTY MEMBERS",
+            "## 03 / ACTIVE QUESTS",
+            "## 04 / FORGE SYSTEM",
+            "## 05 / INVENTORY",
+            "## 06 / SYSTEM METRICS",
+            "## 07 / CURRENTLY",
+        ):
+            self.assertTrue(heading in self.source, f"Missing section: {heading}")
+
+    def test_original_projects_and_current_ventures_survive(self):
+        for project in (
+            "draftdesk",
+            "app-dev-workflow",
+            "photo-retouch",
+            "image-forge",
+            "music-forge",
+            "video-forge",
+        ):
+            self.assertIn(f"https://github.com/x-rush/{project}", self.source)
+        for venture in (
+            "multi-platform content matrix",
+            "AI SaaS sites --going-global",
+            "creative apps portfolio",
+            "cross-border e-commerce",
+        ):
+            self.assertIn(venture, self.source)
+
+    def test_local_art_replaces_template_widgets(self):
+        sources = [image.get("src", "") for image in self.parser.images]
+        self.assertTrue("assets/banner.svg" in sources, "Missing local banner")
+        self.assertTrue("assets/footer.svg" in sources, "Missing local footer")
+        self.assertNotIn("readme-typing-svg", self.source)
+        self.assertNotIn("capsule-render", self.source)
+
+    def test_images_have_alt_text_and_local_files_exist(self):
+        for image in self.parser.images:
+            with self.subTest(image=image.get("src")):
+                self.assertTrue(image.get("alt", "").strip())
+                src = image.get("src", "")
+                if src and not src.startswith(("https://", "http://", "data:")):
+                    self.assertTrue((ROOT / src.split("?", 1)[0]).is_file(), src)
+        for srcset in self.parser.source_sets:
+            for candidate in srcset.split(","):
+                src = candidate.strip().split()[0]
+                if not src.startswith(("https://", "http://", "data:")):
+                    self.assertTrue((ROOT / src.split("?", 1)[0]).is_file(), src)
+
+    def test_readme_has_no_fixed_width_page_container(self):
+        self.assertNotIn("min-width", self.source)
+        self.assertNotIn("width:", self.source)
+        self.assertNotIn("<table width", self.source)
+        self.assertNotIn("<details", self.source.lower())
+
+    def test_inventory_preserves_every_original_badge_exactly_once(self):
+        expected = [
+            "TypeScript", "JavaScript", "Python", "Go", "PHP", "Java", "Rust",
+            "React", "Next.js", "Vue.js", "Vite", "TanStack", "React Native", "Tauri", "PWA",
+            "Express", "FastAPI", "Spring Boot", "Laravel", "Gin",
+            "MySQL", "PostgreSQL", "MongoDB", "Redis", "SQLite",
+            "Docker", "Kubernetes", "Nginx", "Linux", "Node.js", "Git", "GitHub Actions", "CloudBase", "Aliyun",
+            "fal.ai", "Replicate", "ffmpeg", "Prompt Engineering", "Agent Skills",
+        ]
+        actual = [image.get("alt") for image in self.inventory_images()]
+        self.assertEqual(39, len(expected))
+        self.assertCountEqual(expected, actual)
+
+    def test_inventory_badges_keep_consistent_source_styles(self):
+        for image in self.inventory_images():
+            src = image.get("src", "")
+            with self.subTest(badge=image.get("alt")):
+                if "img.shields.io" in src:
+                    self.assertIn("style=for-the-badge", src)
+                if src.endswith("-badge.svg"):
+                    root = ET.parse(ROOT / src).getroot()
+                    self.assertEqual("28", root.get("height"))
+
+    def test_stats_keep_light_and_dark_picture_variants(self):
+        self.assertGreaterEqual(self.source.count("<picture>"), 2)
+        self.assertGreaterEqual(self.source.count('media="(prefers-color-scheme: dark)"'), 2)
+        self.assertTrue("title_color=5DEFFF" in self.source, "Missing cyan stat titles")
+        self.assertTrue("icon_color=9D7CFF" in self.source, "Missing violet stat icons")
+        self.assertTrue("bg_color=F6F8FA" in self.source, "Missing light stat background")
 
 
 if __name__ == "__main__":
