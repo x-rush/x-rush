@@ -157,9 +157,11 @@ class ProfileReadmeTests(unittest.TestCase):
         ):
             self.assertTrue(heading in self.source, f"Missing section: {heading}")
 
-    def test_quest_table_uses_id_not_a_misnamed_status_column(self):
-        self.assertIn("<th>ID</th>", self.source)
+    def test_quest_ids_live_with_projects_without_an_extra_column(self):
+        self.assertNotIn("<th>ID</th>", self.source)
         self.assertNotIn("<th>Status</th>", self.source)
+        for quest_id in ("Q-01", "Q-02", "Q-03"):
+            self.assertIn(quest_id, self.source)
 
     def test_original_projects_and_current_ventures_survive(self):
         for project in (
