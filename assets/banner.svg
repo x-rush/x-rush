@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
   <title id="title">X-RUSH — One developer. Full party.</title>
   <desc id="desc">A refined pixel-art developer console. A cyan and violet runner breaks through an exception monitor, symbolizing an intentional index-out-of-bounds exception.</desc>
   <defs>
-    <linearGradient id="titleInk" gradientUnits="userSpaceOnUse" x1="64" y1="0" x2="526" y2="0">
+    <linearGradient id="titleInk" gradientUnits="userSpaceOnUse" x1="64" y1="0" x2="600" y2="0">
       <stop offset="0" stop-color="#5DEFFF"/>
       <stop offset="0.58" stop-color="#5DEFFF"/>
       <stop offset="1" stop-color="#9D7CFF"/>
@@ -27,12 +27,12 @@
     <path id="glyph-h" d="M0 0h1v7H0zM4 0h1v7H4zM1 3h3v1H1z"/>
     <path id="glyph-dash" d="M0 3h3v1H0z"/>
     <g id="wordmark">
-      <use href="#glyph-x" transform="translate(64 120) scale(14)"/>
-      <use href="#glyph-dash" transform="translate(148 120) scale(14)"/>
-      <use href="#glyph-r" transform="translate(204 120) scale(14)"/>
-      <use href="#glyph-u" transform="translate(288 120) scale(14)"/>
-      <use href="#glyph-s" transform="translate(372 120) scale(14)"/>
-      <use href="#glyph-h" transform="translate(456 120) scale(14)"/>
+      <use href="#glyph-x" transform="translate(64 142) scale(16)"/>
+      <use href="#glyph-dash" transform="translate(160 142) scale(16)"/>
+      <use href="#glyph-r" transform="translate(224 142) scale(16)"/>
+      <use href="#glyph-u" transform="translate(320 142) scale(16)"/>
+      <use href="#glyph-s" transform="translate(416 142) scale(16)"/>
+      <use href="#glyph-h" transform="translate(512 142) scale(16)"/>
     </g>
     <style>
       .mono { font-family: ui-monospace, 'Cascadia Code', Menlo, Consolas, monospace; }
@@ -51,12 +51,12 @@
     </style>
   </defs>
 
-  <path d="M16 0H1264L1280 16V404L1264 420H16L0 404V16Z" fill="#070A12"/>
-  <path d="M16 2H1262L1278 18V402L1262 418H18L2 402V18Z" fill="url(#grid)"/>
-  <path d="M16 2H1262L1278 18V402L1262 418H18L2 402V18Z" fill="url(#scanlines)"/>
-  <path d="M18 2H1262L1278 18V56H2V18Z" fill="#0D1321"/>
-  <path d="M16 1H1264L1279 16V404L1264 419H16L1 404V16Z" fill="none" stroke="#2A3A50" stroke-width="2"/>
-  <path d="M2 56H1278" stroke="#223248"/>
+  <path d="M16 0H1264L1280 16V464L1264 480H16L0 464V16Z" fill="#070A12"/>
+  <path d="M16 2H1262L1278 18V462L1262 478H18L2 462V18Z" fill="url(#grid)"/>
+  <path d="M16 2H1262L1278 18V462L1262 478H18L2 462V18Z" fill="url(#scanlines)"/>
+  <path d="M18 2H1262L1278 18V64H2V18Z" fill="#0D1321"/>
+  <path d="M16 1H1264L1279 16V464L1264 479H16L1 464V16Z" fill="none" stroke="#2A3A50" stroke-width="2"/>
+  <path d="M2 64H1278" stroke="#223248"/>
 
   <g shape-rendering="crispEdges">
     <rect x="26" y="25" width="10" height="10" fill="#5DEFFF"/>
@@ -64,34 +64,36 @@
     <rect x="66" y="25" width="10" height="10" fill="#FF6B35"/>
     <rect x="1160" y="25" width="8" height="8" fill="#B8F35A"/>
   </g>
-  <text x="94" y="35" class="mono" font-size="14" letter-spacing="1.1" fill="#91A3B8">X-RUSH.EXE // PERSONAL BUILD SYSTEM</text>
-  <text x="1180" y="34" class="mono" font-size="12" letter-spacing="1" fill="#B8F35A">ONLINE</text>
+  <text x="94" y="39" class="mono" font-size="14" letter-spacing="1.1" fill="#91A3B8">X-RUSH.EXE // PERSONAL BUILD SYSTEM</text>
+  <text x="1180" y="38" class="mono" font-size="12" letter-spacing="1" fill="#B8F35A">ONLINE</text>
 
-  <text x="64" y="96" class="mono" font-size="13" letter-spacing="1.4" fill="#5DEFFF">[ DEV_PROFILE // 0x2021 ]</text>
-  <text x="528" y="96" class="mono" font-size="11" fill="#71869E">v4.0</text>
+  <text x="64" y="110" class="mono" font-size="14" letter-spacing="1.4" fill="#5DEFFF">[ DEV_PROFILE // 0x2021 ]</text>
+  <text x="610" y="110" class="mono" font-size="12" fill="#71869E">v4.0</text>
 
-  <use href="#wordmark" transform="translate(5 5)" fill="#9D7CFF" opacity="0.2" shape-rendering="crispEdges"/>
+  <use href="#wordmark" transform="translate(6 6)" fill="#9D7CFF" opacity="0.2" shape-rendering="crispEdges"/>
   <use href="#wordmark" fill="url(#titleInk)" shape-rendering="crispEdges"/>
 
-  <text x="64" y="260" class="mono" font-size="23" font-weight="700" letter-spacing="1" fill="#D7E1EA">ONE DEVELOPER. FULL PARTY.</text>
-  <text x="64" y="305" class="mono" font-size="17" fill="#91A3B8">&gt; make agents actually ship</text>
-  <rect x="350" y="289" width="10" height="18" class="cursor" fill="#5DEFFF" shape-rendering="crispEdges"/>
+  <text x="64" y="300" class="mono" font-size="26" font-weight="700" letter-spacing="1" fill="#D7E1EA">ONE DEVELOPER. FULL PARTY.</text>
+  <text x="64" y="350" class="mono" font-size="19" fill="#91A3B8">&gt; make agents actually ship</text>
+  <rect x="390" y="330" width="12" height="21" class="cursor" fill="#5DEFFF" shape-rendering="crispEdges"/>
 
-  <g class="mono" font-size="12" letter-spacing=".8">
-    <path d="M64 338H168L176 346V366L168 374H64Z" fill="#0D1321" stroke="#294154"/>
-    <rect x="74" y="351" width="7" height="7" fill="#5DEFFF" shape-rendering="crispEdges"/>
-    <text x="91" y="360" fill="#AFC1D2">ENGINES</text>
-    <path d="M188 338H320L328 346V366L320 374H188Z" fill="#0D1321" stroke="#35405C"/>
-    <rect x="198" y="351" width="7" height="7" fill="#9D7CFF" shape-rendering="crispEdges"/>
-    <text x="215" y="360" fill="#AFC1D2">WORKFLOWS</text>
-    <path d="M340 338H404L412 346V366L404 374H340Z" fill="#0D1321" stroke="#294154"/>
-    <rect x="350" y="351" width="7" height="7" fill="#B8F35A" shape-rendering="crispEdges"/>
-    <text x="367" y="360" fill="#AFC1D2">APPS</text>
-    <path d="M424 338H516L524 346V366L516 374H424Z" fill="#0D1321" stroke="#35405C"/>
-    <rect x="434" y="351" width="7" height="7" fill="#FF6B35" shape-rendering="crispEdges"/>
-    <text x="451" y="360" fill="#AFC1D2">CONTENT</text>
+  <g class="mono" font-size="14" letter-spacing=".6">
+    <path d="M64 390H176L184 398V426L176 434H64Z" fill="#0D1321" stroke="#294154"/>
+    <rect x="76" y="404" width="9" height="9" fill="#5DEFFF" shape-rendering="crispEdges"/>
+    <text x="96" y="416" fill="#AFC1D2">ENGINES</text>
+    <path d="M196 390H332L340 398V426L332 434H196Z" fill="#0D1321" stroke="#35405C"/>
+    <rect x="208" y="404" width="9" height="9" fill="#9D7CFF" shape-rendering="crispEdges"/>
+    <text x="228" y="416" fill="#AFC1D2">WORKFLOWS</text>
+    <path d="M352 390H428L436 398V426L428 434H352Z" fill="#0D1321" stroke="#294154"/>
+    <rect x="364" y="404" width="9" height="9" fill="#B8F35A" shape-rendering="crispEdges"/>
+    <text x="384" y="416" fill="#AFC1D2">APPS</text>
+    <path d="M448 390H552L560 398V426L552 434H448Z" fill="#0D1321" stroke="#35405C"/>
+    <rect x="460" y="404" width="9" height="9" fill="#FF6B35" shape-rendering="crispEdges"/>
+    <text x="480" y="416" fill="#AFC1D2">CONTENT</text>
   </g>
-  <text x="64" y="400" class="mono" font-size="11" letter-spacing="1.2" fill="#71869E">BUILDING IN PUBLIC SINCE 2021</text>
+  <text x="64" y="460" class="mono" font-size="12" letter-spacing="1.2" fill="#71869E">BUILDING IN PUBLIC SINCE 2021</text>
+
+  <g transform="translate(930 240) scale(1.12) translate(-930 -225)">
 
   <path d="M746 80H1114L1130 96V354L1114 370H746L730 354V96Z" fill="#0D1321"/>
   <g clip-path="url(#monitorClip)">
@@ -102,7 +104,7 @@
   <path d="M1130 120V96L1114 80H746L730 96V354L746 370H1114L1130 354V242" fill="none" stroke="#30445C" stroke-width="2"/>
   <path d="M730 118H1130" stroke="#25384D"/>
   <text x="752" y="105" class="mono" font-size="12" letter-spacing="1.1" fill="#71869E">EXCEPTION_MONITOR</text>
-  <text x="1040" y="105" class="mono" font-size="11" fill="#FF6B35">ERR:0x0B</text>
+  <text x="1040" y="105" class="mono" font-size="12" fill="#FF6B35">ERR:0x0B</text>
 
   <g opacity="0.28" stroke="#5DEFFF" shape-rendering="crispEdges">
     <path d="M780 154V138H796M1082 138H1098V154M780 278V294H796M1082 294H1098V278" fill="none" stroke-width="2"/>
@@ -140,6 +142,7 @@
 
   <text x="1198" y="322" transform="rotate(-90 1198 322)" class="mono" font-size="12" letter-spacing="1.5" fill="#FF6B35">INDEX_OUT_OF_BOUNDS</text>
   <text x="752" y="340" class="mono" font-size="13" fill="#B8F35A">&gt; exception = intentional</text>
-  <text x="752" y="359" class="mono" font-size="11" letter-spacing=".8" fill="#71869E">BREAK THE FRAME. KEEP THE SIGNAL.</text>
-  <text x="956" y="400" class="mono" font-size="11" letter-spacing="1.2" fill="#71869E">NO LIMITS // BY DESIGN</text>
+  <text x="752" y="359" class="mono" font-size="12" letter-spacing=".8" fill="#71869E">BREAK THE FRAME. KEEP THE SIGNAL.</text>
+  <text x="956" y="400" class="mono" font-size="12" letter-spacing="1.2" fill="#71869E">NO LIMITS // BY DESIGN</text>
+  </g>
 </svg>

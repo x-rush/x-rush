@@ -26,7 +26,7 @@ This fails if it looks like a generic neon cyberpunk template, sacrifices readab
 
 ## Visual System
 
-- Canvas: `1280 × 420` hero with a dark terminal chassis.
+- Canvas: `1280 × 480` hero with a dark terminal chassis; the closing checkpoint panel is `1280 × 240` so the footer has enough visual weight to answer the hero.
 - Background: `#070A12`; panels: `#0D1321`.
 - Primary: electric cyan `#5DEFFF`; secondary: exception violet `#9D7CFF`.
 - Status: acid green `#B8F35A`; intentional exception accents may retain orange `#FF6B35`.
@@ -37,7 +37,7 @@ This fails if it looks like a generic neon cyberpunk template, sacrifices readab
 
 ## Page Structure
 
-1. **Hero** — a responsive `<picture>` using local `assets/banner.svg` on desktop and `assets/banner-mobile.svg` at widths up to 640px; X-RUSH, `ONE DEVELOPER. FULL PARTY.`, product lines and an out-of-bounds pixel entity. The mobile composition is `640 × 640` with all SVG text at least 18px before scaling.
+1. **Hero** — a responsive `<picture>` using local `assets/banner.svg` on desktop and `assets/banner-mobile.svg` at widths up to 640px; X-RUSH, `ONE DEVELOPER. FULL PARTY.`, product lines and an out-of-bounds pixel entity. The mobile composition is `640 × 680` with all SVG text at least 20px before scaling.
 2. **01 / WHOAMI** — compact terminal identity, mission and motto.
 3. **02 / PARTY MEMBERS** — four slots: ENGINEER, ARCHITECT, BUILDER, SCOUT, mapped to engines, workflows, apps and content.
 4. **03 / ACTIVE QUESTS** — existing draftdesk, app-dev-workflow and photo-retouch links and bilingual descriptions, with custom pixel icons.
@@ -45,7 +45,7 @@ This fails if it looks like a generic neon cyberpunk template, sacrifices readab
 6. **05 / INVENTORY** — all 39 existing badges in the existing six categories, fully visible. Category labels use slot numbers and counts. Badge sources retain `for-the-badge` height; local badge SVGs remain 28px high.
 7. **06 / SYSTEM METRICS** — GitHub stats and top languages with light/dark variants. The original stats provider returned HTTP 503 during implementation, so use the verified summary-card provider with `tokyonight` in dark mode and `default` in light mode. The dark `#70a5fd` headings on `#1a1b27` provide approximately 6.90:1 contrast.
 8. **07 / CURRENTLY** — preserve all four current venture lines.
-9. **Footer** — responsive local pixel footer using `assets/footer.svg` on desktop and the large-type `640 × 240` `assets/footer-mobile.svg` at widths up to 640px, plus build status and follow link.
+9. **Footer** — responsive local pixel footer using the `1280 × 240` `assets/footer.svg` on desktop and the `640 × 360` `assets/footer-mobile.svg` at widths up to 640px, plus build status and follow link. A central pixel portal turns the closing panel into the entrance to the next checkpoint rather than a thin status strip; mobile text is at least 24px before scaling.
 
 ## Assets
 
