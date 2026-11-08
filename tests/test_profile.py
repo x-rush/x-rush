@@ -54,10 +54,23 @@ class ProfileAssetTests(unittest.TestCase):
         path = ASSETS / "banner.svg"
         root = ET.parse(path).getroot()
         source = path.read_text(encoding="utf-8")
-        self.assertEqual("0 0 1280 420", root.get("viewBox"))
+        self.assertEqual("0 0 1280 480", root.get("viewBox"))
         for color in ("#070A12", "#0D1321", "#5DEFFF", "#9D7CFF", "#B8F35A", "#D7E1EA"):
             self.assertIn(color, source)
         self.assertIn("crispEdges", source)
+        inherited_sizes = [float(match) for match in re.findall(r'font-size="([0-9.]+)"', source)]
+        self.assertTrue(inherited_sizes)
+        self.assertGreaterEqual(min(inherited_sizes), 12, "Desktop hero microcopy must grow with the canvas")
+
+    def test_footer_is_a_full_size_checkpoint_panel(self):
+        path = ASSETS / "footer.svg"
+        root = ET.parse(path).getroot()
+        source = path.read_text(encoding="utf-8")
+        self.assertEqual("0 0 1280 240", root.get("viewBox"))
+        self.assertIn("NEXT CHECKPOINT", source)
+        font_sizes = [float(match) for match in re.findall(r'font-size="([0-9.]+)"', source)]
+        self.assertGreaterEqual(min(font_sizes), 14, "Footer microcopy is too small")
+        self.assertGreaterEqual(sum(size >= 20 for size in font_sizes), 3, "Footer needs a larger primary type hierarchy")
 
     def test_banner_motion_has_a_static_reduced_motion_fallback(self):
         for path in ASSETS.rglob("*.svg"):
@@ -81,7 +94,7 @@ class ProfileAssetTests(unittest.TestCase):
         self.assertGreaterEqual(contrast_ratio("#71869E", "#070A12"), 4.5)
 
     def test_mobile_artwork_has_readable_canvas_and_type(self):
-        cases = (("banner-mobile.svg", "0 0 640 640", 18), ("footer-mobile.svg", "0 0 640 240", 20))
+        cases = (("banner-mobile.svg", "0 0 640 680", 20), ("footer-mobile.svg", "0 0 640 360", 24))
         for name, view_box, minimum_font_size in cases:
             with self.subTest(asset=name):
                 path = ASSETS / name

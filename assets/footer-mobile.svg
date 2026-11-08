@@ -1,19 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
-  <title id="title">X-RUSH mobile footer — Beyond the limit</title>
-  <desc id="desc">Large-type mobile footer: building in public since 2021, one developer full party, next checkpoint beyond the limit.</desc>
-  <path d="M12 2H628L638 12V228L626 238H12L2 228V12Z" fill="#070A12" stroke="#263A4E" stroke-width="2"/>
-  <path d="M2 62H638" stroke="#263A4E"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">X-RUSH mobile footer — Enter the next level</title>
+  <desc id="desc">A large-type mobile pixel end panel with a central portal, building in public since 2021, and the next checkpoint beyond the limit.</desc>
+  <defs>
+    <linearGradient id="progressInk" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#5DEFFF"/>
+      <stop offset="1" stop-color="#9D7CFF"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#5DEFFF" stroke-opacity="0.045"/>
+    </pattern>
+  </defs>
+
+  <path d="M12 0H628L640 12V348L628 360H12L0 348V12Z" fill="#070A12"/>
+  <path d="M14 2H626L638 14V346L626 358H14L2 346V14Z" fill="url(#grid)"/>
+  <path d="M16 2H624L638 16V56H2V16Z" fill="#0D1321"/>
+  <path d="M12 1H628L639 12V348L628 359H12L1 348V12Z" fill="none" stroke="#263A4E" stroke-width="2"/>
+  <path d="M2 56H638" stroke="#263A4E"/>
+
   <g shape-rendering="crispEdges">
-    <rect x="24" y="27" width="10" height="10" fill="#5DEFFF"/>
-    <rect x="44" y="27" width="10" height="10" fill="#9D7CFF"/>
-    <rect x="550" y="27" width="60" height="8" fill="#B8F35A"/>
+    <rect x="24" y="22" width="10" height="10" fill="#5DEFFF"/>
+    <rect x="44" y="22" width="10" height="10" fill="#9D7CFF"/>
+    <rect x="64" y="22" width="10" height="10" fill="#B8F35A"/>
+    <rect x="540" y="24" width="68" height="8" fill="#B8F35A"/>
   </g>
-  <text x="72" y="41" font-family="ui-monospace, Consolas, monospace" font-size="20" letter-spacing="1" fill="#91A3B8">X-RUSH // EOF</text>
-  <text x="32" y="105" font-family="ui-monospace, Consolas, monospace" font-size="24" fill="#5DEFFF">BUILDING IN PUBLIC</text>
-  <text x="32" y="141" font-family="ui-monospace, Consolas, monospace" font-size="24" fill="#5DEFFF">SINCE 2021</text>
-  <text x="352" y="101" font-family="ui-monospace, Consolas, monospace" font-size="20" fill="#9D7CFF">NEXT CHECKPOINT:</text>
-  <text x="352" y="139" font-family="ui-monospace, Consolas, monospace" font-size="24" font-weight="700" fill="#D7E1EA">BEYOND THE LIMIT_</text>
-  <text x="32" y="194" font-family="ui-monospace, Consolas, monospace" font-size="20" fill="#D7E1EA">ONE DEV. FULL PARTY. ALWAYS SHIPPING.</text>
-  <rect x="32" y="214" width="576" height="4" fill="#0D1321"/>
-  <rect x="32" y="214" width="426" height="4" fill="#B8F35A"/>
+  <g font-family="ui-monospace, Consolas, monospace">
+    <text x="92" y="38" font-size="24" letter-spacing="1" fill="#91A3B8">X-RUSH // EOF</text>
+
+    <text x="32" y="100" font-size="24" fill="#5DEFFF">BUILDING IN PUBLIC</text>
+    <text x="32" y="142" font-size="32" font-weight="700" letter-spacing="1" fill="#D7E1EA">SINCE 2021</text>
+    <text x="336" y="100" font-size="24" fill="#9D7CFF">NEXT CHECKPOINT:</text>
+    <text x="336" y="142" font-size="26" font-weight="700" fill="#D7E1EA">BEYOND THE LIMIT_</text>
+
+    <text x="32" y="290" font-size="24" fill="#D7E1EA">ONE DEV. FULL PARTY. ALWAYS SHIPPING.</text>
+    <text x="32" y="330" font-size="28" font-weight="700" fill="#B8F35A">&gt; ENTER NEXT LEVEL_</text>
+  </g>
+
+  <path d="M32 218H252M388 218H608" fill="none" stroke="#294154" stroke-width="3" stroke-dasharray="14 10"/>
+  <g transform="translate(290 176) scale(3.5)" shape-rendering="crispEdges">
+    <path d="M4 22V8H5V4H7V2H11V4H13V8H14V22H12V9H11V6H7V9H6V22Z" fill="#9D7CFF" opacity="0.35"/>
+    <path d="M5 22V8H6V5H7V4H11V5H12V8H13V22H11V9H10V7H8V9H7V22Z" fill="#5DEFFF"/>
+    <path d="M7 22V10H8V8H10V10H11V22Z" fill="#0D1321"/>
+    <path d="M7 15H9V13H10V14H12V16H11V17H10V19H9V17H7Z" fill="#B8F35A"/>
+    <rect x="2" y="5" width="1" height="1" fill="#5DEFFF"/>
+    <rect x="15" y="9" width="1" height="1" fill="#9D7CFF"/>
+    <rect x="1" y="15" width="1" height="1" fill="#9D7CFF"/>
+    <rect x="16" y="18" width="1" height="1" fill="#FF6B35"/>
+  </g>
+  <rect x="252" y="213" width="10" height="10" fill="#5DEFFF" shape-rendering="crispEdges"/>
+  <rect x="378" y="213" width="10" height="10" fill="#9D7CFF" shape-rendering="crispEdges"/>
+
+  <rect x="32" y="346" width="576" height="5" fill="#0D1321"/>
+  <rect x="32" y="346" width="424" height="5" fill="url(#progressInk)"/>
+  <rect x="456" y="346" width="14" height="5" fill="#B8F35A" shape-rendering="crispEdges"/>
 </svg>
